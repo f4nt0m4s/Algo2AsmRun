@@ -1,0 +1,17 @@
+/*
+	* Test boucles while imbriquées
+*/
+\BEGIN{algo}{nested_while}{}
+	\SET{n}{0}
+	\SET{i}{0}
+	\SET{j}{0}
+	\DOWHILE {i < 10}
+		\DOWHILE {j < 10}
+			\SET{n}{n+1}
+			\INCR{j}
+		\OD
+		\SET{j}{0}
+		\INCR{i}
+	\OD
+	\RETURN{n}
+\END{algo}

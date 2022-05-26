@@ -1,0 +1,20 @@
+/*
+	* Test if else avec imbrication 
+*/
+\BEGIN{algo}{if_else}{a}
+	\COM{Test if else avec imbrication}
+	\SET{p}{2}
+	\IF {a > 2}
+		\IF {a < 10}
+			\SET{p}{4}
+		\FI
+	\ELSE
+		\SET{p}{2}
+		\IF {a > 1}
+			\SET{p}{6}
+		\ELSE
+			\SET{p}{7}
+		\FI
+	\FI
+	\RETURN{p}
+\END{algo}

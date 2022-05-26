@@ -1,0 +1,15 @@
+/*
+	* Test boucle while avec l'algorithme factorielle
+*/
+\BEGIN{algo}{while}{n}
+	\IF {n == 0}
+		\RETURN{1}
+	\FI
+	\SET{f}{1}
+	\SET{i}{1}
+	\DOWHILE {i < (n+1)}
+		\SET{f}{f * i}
+		\INCR{i}
+	\OD
+	\RETURN{f}
+\END{algo}

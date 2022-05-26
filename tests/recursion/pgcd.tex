@@ -1,0 +1,29 @@
+/*
+	* Test récursion avec l'algorithme récursif PGCD
+	int PGCD(int a, int b) {
+		if (a == b) {
+			return a;
+		}
+		else {
+			if(a>b)
+				return PGCD(a - b, b);
+			else
+				return PGCD(a, b - a);
+		}
+	}
+	int main(void) {
+		printf("%d\n", PGCD(30, 15));
+		return 0;
+	}
+*/
+\BEGIN{algo}{pgcd}{a,b}
+	\IF {a == b}
+		\RETURN{a}
+	\ELSE
+		\IF {a > b}
+			\RETURN{{pgcd}{a - b, b}}
+		\ELSE
+			\RETURN{{pgcd}{a, b - a}}
+		\FI
+	\FI
+\END{algo}

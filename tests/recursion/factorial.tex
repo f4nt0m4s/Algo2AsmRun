@@ -1,0 +1,33 @@
+/*
+	* Test récursion avec l'algorithme factorielle
+	long factorielle(int n) {
+	  if (n == 0)
+		return 1;
+	  else
+		return (n * factorielle(n-1));
+	}
+	int main(void) {
+		printf("%d\n", fib(10));
+		return 0;
+	}
+*/
+/*
+	0! = 1
+	1! = 1
+	2! = 2
+	3! = 6
+	4! = 24
+	5! = 120
+	6! = 720
+	7! = 5040
+	8! = 40320
+	9! = 362880
+	10! = 3628800
+*/
+\BEGIN{algo}{factorial}{n}
+	\IF {n == 0}
+		\RETURN{1}
+	\ELSE
+		\RETURN{n * {factorial}{n-1}}
+	\FI
+\END{algo}
